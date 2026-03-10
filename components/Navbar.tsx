@@ -206,35 +206,35 @@ export default function Navbar() {
                 <div id="menu-sobre-mobile" className="mt-1 space-y-1 pl-4">
                   <Link
                     href="/sobre/historia"
-                    className="block px-2 py-1 text-white/90 hover:bg-white/10 rounded-md text-sm"
+                    className="block px-2 py-1 text-white hover:bg-white/10 hover:text-white rounded-md text-sm transition-colors"
                     onClick={closeAllMenus}
                   >
                     APRESENTAÇÃO
                   </Link>
                   <Link
                     href="/sobre/objetivos"
-                    className="block px-2 py-1 text-white/90 hover:bg-white/10 rounded-md text-sm"
+                    className="block px-2 py-1 text-white hover:bg-white/10 hover:text-white rounded-md text-sm transition-colors"
                     onClick={closeAllMenus}
                   >
                     FINALIDADES E AÇÕES
                   </Link>
                   <Link
                     href="/sobre/estrutura"
-                    className="block px-2 py-1 text-white/90 hover:bg-white/10 rounded-md text-sm"
+                    className="block px-2 py-1 text-white hover:bg-white/10 hover:text-white rounded-md text-sm transition-colors"
                     onClick={closeAllMenus}
                   >
-                    Nossa Estrutura
+                    NOSSA ESTRUTURA
                   </Link>
                   <Link
                     href="/convenios"
-                    className="block px-2 py-1 text-white/90 hover:bg-white/10 rounded-md text-sm"
+                    className="block px-2 py-1 text-white hover:bg-white/10 hover:text-white rounded-md text-sm transition-colors"
                     onClick={closeAllMenus}
                   >
                     CONVÊNIOS
                   </Link>
                   <Link
                     href="/pesquisadores"
-                    className="block px-2 py-1 text-white/90 hover:bg-white/10 rounded-md text-sm"
+                    className="block px-2 py-1 text-white hover:bg-white/10 hover:text-white rounded-md text-sm transition-colors"
                     onClick={closeAllMenus}
                   >
                     PESQUISADORES
