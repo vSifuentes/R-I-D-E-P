@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Card from "@/components/Card";
 import ContentSection from "@/components/ContentSection";
 import PageContainer from "@/components/PageContainer";
 
@@ -18,26 +17,24 @@ export default function Sobre() {
       subtitle="A RIDEP é uma rede acadêmica interinstitucional e internacional dedicada à formação e ao desenvolvimento profissional de professores, com atuação baseada em cooperação científica e intercâmbio entre instituições."
     >
       <ContentSection id="historia" title="Apresentação">
-          <Card variant="accent" className="border-l-4 border-l-[#003366]">
-            <div className="content-copy text-lg">
-              <p>
-                A Rede Internacional de Pesquisas sobre o Desenvolvimento
-                Profissional de Professores (RIDEP) constitui-se como um espaço
-                acadêmico interinstitucional e internacional que reúne
-                pesquisadores da área da Educação interessados em investigações
-                relacionadas à formação e ao desenvolvimento profissional de
-                professores da Educação Básica e do Ensino Superior.
-              </p>
-              <p>
-                A RIDEP tem como finalidade promover a produção e a socialização
-                de conhecimentos científicos, por meio da interação, da
-                cooperação acadêmica e do intercâmbio entre pesquisadores
-                vinculados a diferentes instituições nacionais e internacionais.
-                Trata-se de uma rede de natureza acadêmica, sem fins lucrativos
-                e sem ônus financeiro para as partes envolvidas.
-              </p>
-            </div>
-          </Card>
+          <div className="content-copy text-lg">
+            <p>
+              A Rede Internacional de Pesquisas sobre o Desenvolvimento
+              Profissional de Professores (RIDEP) constitui-se como um espaço
+              acadêmico interinstitucional e internacional que reúne
+              pesquisadores da área da Educação interessados em investigações
+              relacionadas à formação e ao desenvolvimento profissional de
+              professores da Educação Básica e do Ensino Superior.
+            </p>
+            <p>
+              A RIDEP tem como finalidade promover a produção e a socialização
+              de conhecimentos científicos, por meio da interação, da
+              cooperação acadêmica e do intercâmbio entre pesquisadores
+              vinculados a diferentes instituições nacionais e internacionais.
+              Trata-se de uma rede de natureza acadêmica, sem fins lucrativos
+              e sem ônus financeiro para as partes envolvidas.
+            </p>
+          </div>
       </ContentSection>
 
       <ContentSection
@@ -45,32 +42,30 @@ export default function Sobre() {
         title="Pressupostos da rede"
         intro="De caráter interinstitucional, a RIDEP agrega linhas e grupos de pesquisa de diferentes programas de pós-graduação, considerando entre seus pressupostos que:"
       >
-          <Card variant="accent">
-            <ul className="content-list list-disc">
-              <li>
-                a educação é um bem público e um processo que se desenvolve ao
-                longo da vida;
-              </li>
-              <li>
-                a formação e o desenvolvimento profissional docente estão
-                diretamente relacionados à inserção dos professores em pesquisas
-                científicas;
-              </li>
-              <li>
-                a cooperação entre profissionais e instituições é condição
-                necessária para o enfrentamento de problemas comuns no campo
-                educacional;
-              </li>
-              <li>
-                as redes acadêmicas constituem importantes instrumentos de
-                cooperação científica e formativa;
-              </li>
-              <li>
-                o trabalho em rede favorece o desenvolvimento profissional
-                docente e os processos formativos de estudantes.
-              </li>
-            </ul>
-          </Card>
+          <ul className="content-list list-disc">
+            <li>
+              a educação é um bem público e um processo que se desenvolve ao
+              longo da vida;
+            </li>
+            <li>
+              a formação e o desenvolvimento profissional docente estão
+              diretamente relacionados à inserção dos professores em pesquisas
+              científicas;
+            </li>
+            <li>
+              a cooperação entre profissionais e instituições é condição
+              necessária para o enfrentamento de problemas comuns no campo
+              educacional;
+            </li>
+            <li>
+              as redes acadêmicas constituem importantes instrumentos de
+              cooperação científica e formativa;
+            </li>
+            <li>
+              o trabalho em rede favorece o desenvolvimento profissional
+              docente e os processos formativos de estudantes.
+            </li>
+          </ul>
       </ContentSection>
 
       <ContentSection
@@ -78,43 +73,42 @@ export default function Sobre() {
         title="Finalidades e ações"
         intro="A RIDEP contribui para o fortalecimento da educação em seus diferentes níveis e modalidades por meio das seguintes frentes de trabalho:"
       >
-          <Card variant="accent">
-            <ul className="content-list list-disc">
-              <li>
-                aprimoramento das práticas educativas nas Instituições de
-                Ensino;
-              </li>
-              <li>
-                promoção de intercâmbio acadêmico entre docentes, discentes e
-                pesquisadores;
-              </li>
-              <li>
-                incentivo à produção científica conjunta e à publicação de
-                resultados de pesquisa;
-              </li>
-              <li>
-                realização de processos formativos, consultorias e treinamentos;
-              </li>
-              <li>planejamento e organização de eventos científicos;</li>
-              <li>participação em eventos nacionais e internacionais;</li>
-              <li>
-                incentivo à pesquisa e ao aperfeiçoamento da profissão docente;
-              </li>
-              <li>fortalecimento dos Programas de Pós-Graduação em Educação;</li>
-              <li>
-                identificação de objetos de investigação ainda pouco explorados;
-              </li>
-              <li>
-                construção de repositórios, bibliotecas digitais, observatórios
-                e outros espaços de sistematização da produção científica.
-              </li>
-            </ul>
-          </Card>
+          <ul className="content-list list-disc">
+            <li>
+              aprimoramento das práticas educativas nas Instituições de
+              Ensino;
+            </li>
+            <li>
+              promoção de intercâmbio acadêmico entre docentes, discentes e
+              pesquisadores;
+            </li>
+            <li>
+              incentivo à produção científica conjunta e à publicação de
+              resultados de pesquisa;
+            </li>
+            <li>
+              realização de processos formativos, consultorias e treinamentos;
+            </li>
+            <li>planejamento e organização de eventos científicos;</li>
+            <li>participação em eventos nacionais e internacionais;</li>
+            <li>
+              incentivo à pesquisa e ao aperfeiçoamento da profissão docente;
+            </li>
+            <li>fortalecimento dos Programas de Pós-Graduação em Educação;</li>
+            <li>
+              identificação de objetos de investigação ainda pouco explorados;
+            </li>
+            <li>
+              construção de repositórios, bibliotecas digitais, observatórios
+              e outros espaços de sistematização da produção científica.
+            </li>
+          </ul>
       </ContentSection>
 
       <ContentSection id="estrutura" title="Estrutura da rede">
           <div className="space-y-6">
-            <Card title="Instituição gestora e coordenação" variant="accent" className="border-l-4 border-l-[#003366]">
+            <section>
+              <h3 className="text-lg font-semibold text-[#003366] mb-3">Instituição gestora e coordenação</h3>
               <div className="content-copy">
                 <p>
                   <strong>Instituição gestora:</strong> Universidade de Uberaba
@@ -140,9 +134,10 @@ export default function Sobre() {
                   <strong>E-mail:</strong> ppg.educ@uniube.br
                 </p>
               </div>
-            </Card>
+            </section>
 
-            <Card title="Coordenadora da rede" variant="accent">
+            <section>
+              <h3 className="text-lg font-semibold text-[#003366] mb-3">Coordenadora da rede</h3>
               <div className="content-copy">
                 <p>
                   <strong>Nome:</strong> Vania Maria de Oliveira Vieira
@@ -151,9 +146,10 @@ export default function Sobre() {
                   <strong>E-mail:</strong> vania.vieira@uniube.br
                 </p>
               </div>
-            </Card>
+            </section>
 
-            <Card title="Responsabilidades dos integrantes" variant="accent">
+            <section>
+              <h3 className="text-lg font-semibold text-[#003366] mb-3">Responsabilidades dos integrantes</h3>
               <ul className="content-list list-disc">
                 <li>Participar das atividades direcionadas pela RIDEP;</li>
                 <li>Propor melhorias para a realização das atividades;</li>
@@ -177,9 +173,10 @@ export default function Sobre() {
                 </li>
                 <li>Entregar relatório anual das atividades realizadas na rede.</li>
               </ul>
-            </Card>
+            </section>
 
-            <Card title="Acesso, permanência e vigência na rede" variant="accent">
+            <section>
+              <h3 className="text-lg font-semibold text-[#003366] mb-3">Acesso, permanência e vigência na rede</h3>
               <div className="content-copy">
                 <p>
                   A participação na RIDEP dá-se por adesão voluntária de
@@ -200,57 +197,41 @@ export default function Sobre() {
                   andamento.
                 </p>
               </div>
-            </Card>
+            </section>
 
             <div className="content-grid">
-            <Card title="Convênios com programas de pós-graduação" variant="soft" className="border-t-4 border-t-[#003366]">
-              <p className="text-gray-600 leading-relaxed mb-4">
-                A RIDEP mantém convênios com Programas de Pós-Graduação de
-                universidades brasileiras e estrangeiras, fortalecendo a
-                cooperação acadêmica e a produção científica conjunta.
-              </p>
-              <Link
-                href="/convenios"
-                className="inline-flex items-center gap-2 text-primary hover:text-accent font-semibold transition"
-              >
-                Ver instituições parceiras →
-              </Link>
-            </Card>
+              <section className="pt-3">
+                <h3 className="text-lg font-semibold text-[#003366] mb-2">Convênios com programas de pós-graduação</h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  A RIDEP mantém convênios com Programas de Pós-Graduação de
+                  universidades brasileiras e estrangeiras, fortalecendo a
+                  cooperação acadêmica e a produção científica conjunta.
+                </p>
+                <Link
+                  href="/convenios"
+                  className="inline-flex items-center gap-2 text-primary hover:text-accent font-semibold transition"
+                >
+                  Ver instituições parceiras →
+                </Link>
+              </section>
 
-            <Card title="Pesquisadores integrantes" variant="soft" className="border-t-4 border-t-[#2A9D8F]">
-              <p className="text-gray-600 leading-relaxed mb-4">
-                A rede reúne pesquisadoras e pesquisadores de diferentes
-                instituições, países e áreas de atuação, comprometidos com a
-                formação e o desenvolvimento profissional de professores.
-              </p>
-              <Link
-                href="/pesquisadores"
-                className="inline-flex items-center gap-2 text-primary hover:text-accent font-semibold transition"
-              >
-                Conhecer pesquisadores da RIDEP →
-              </Link>
-            </Card>
-          </div>
+              <section className="pt-3">
+                <h3 className="text-lg font-semibold text-[#003366] mb-2">Pesquisadores integrantes</h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  A rede reúne pesquisadoras e pesquisadores de diferentes
+                  instituições, países e áreas de atuação, comprometidos com a
+                  formação e o desenvolvimento profissional de professores.
+                </p>
+                <Link
+                  href="/pesquisadores"
+                  className="inline-flex items-center gap-2 text-primary hover:text-accent font-semibold transition"
+                >
+                  Conhecer pesquisadores da RIDEP →
+                </Link>
+              </section>
+            </div>
           </div>
       </ContentSection>
-
-        {/* Navegação inferior */}
-        <div className="mt-12 pt-8 border-t border-gray-200">
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link
-              href="/"
-              className="text-primary hover:text-accent font-semibold inline-flex items-center gap-2 transition"
-            >
-              ← Voltar ao Início
-            </Link>
-            <Link
-              href="/organizacao"
-              className="text-primary hover:text-accent font-semibold inline-flex items-center gap-2 transition"
-            >
-              Gestão e Organização →
-            </Link>
-          </div>
-        </div>
     </PageContainer>
   );
 }

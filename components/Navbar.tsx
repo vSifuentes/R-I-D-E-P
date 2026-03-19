@@ -81,21 +81,21 @@ export default function Navbar() {
                   className="absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg py-2 z-50"
                 >
                   <Link
-                    href="/sobre/historia"
+                    href="/sobre#historia"
                     className="block px-4 py-2 text-sm font-semibold text-primary hover:bg-gray-100"
                     onClick={() => setIsSobreOpen(false)}
                   >
                     APRESENTAÇÃO
                   </Link>
                   <Link
-                    href="/sobre/objetivos"
+                    href="/sobre#objetivos"
                     className="block px-4 py-2 text-sm font-semibold text-primary hover:bg-gray-100"
                     onClick={() => setIsSobreOpen(false)}
                   >
                     FINALIDADES E AÇÕES
                   </Link>
                   <Link
-                    href="/sobre/estrutura"
+                    href="/sobre#estrutura"
                     className="block px-4 py-2 text-sm font-semibold text-primary hover:bg-gray-100"
                     onClick={() => setIsSobreOpen(false)}
                   >
@@ -205,21 +205,21 @@ export default function Navbar() {
               {isSobreMobileOpen && (
                 <div id="menu-sobre-mobile" className="mt-1 space-y-1 pl-4">
                   <Link
-                    href="/sobre/historia"
+                    href="/sobre#historia"
                     className="block px-2 py-1 text-white hover:bg-white/10 hover:text-white rounded-md text-sm transition-colors"
                     onClick={closeAllMenus}
                   >
                     APRESENTAÇÃO
                   </Link>
                   <Link
-                    href="/sobre/objetivos"
+                    href="/sobre#objetivos"
                     className="block px-2 py-1 text-white hover:bg-white/10 hover:text-white rounded-md text-sm transition-colors"
                     onClick={closeAllMenus}
                   >
                     FINALIDADES E AÇÕES
                   </Link>
                   <Link
-                    href="/sobre/estrutura"
+                    href="/sobre#estrutura"
                     className="block px-2 py-1 text-white hover:bg-white/10 hover:text-white rounded-md text-sm transition-colors"
                     onClick={closeAllMenus}
                   >

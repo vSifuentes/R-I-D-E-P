@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Card from "@/components/Card";
 import ContentSection from "@/components/ContentSection";
 import PageContainer from "@/components/PageContainer";
 
@@ -90,19 +88,19 @@ export default function Convenios() {
       <ContentSection title="Convênios com universidades brasileiras">
         <div className="content-grid content-grid--three">
           {conveniosNacionais.map((convenio) => (
-            <Card
+            <article
               key={convenio.instituicao}
-              title={convenio.instituicao}
-              subtitle={convenio.local}
-              variant="accent"
-              className="h-full"
-              contentClassName="space-y-3 text-sm"
+              className="h-full space-y-3 text-sm"
             >
+              <div>
+                <h3 className="text-base font-semibold text-[#003366]">{convenio.instituicao}</h3>
+                <p className="text-sm text-gray-500">{convenio.local}</p>
+              </div>
               <div><p className="info-label">Programa</p><p className="info-value">{convenio.programa}</p></div>
               <div><p className="info-label">Dirigente</p><p className="info-value">{convenio.dirigente}</p></div>
               <div><p className="info-label">Coordenador</p><p className="info-value">{convenio.coordenador}</p></div>
               <div><p className="info-label">Representante</p><p className="info-value text-primary">{convenio.representante}</p></div>
-            </Card>
+            </article>
           ))}
         </div>
       </ContentSection>
@@ -110,48 +108,24 @@ export default function Convenios() {
       <ContentSection title="Convênios com universidades estrangeiras">
         <div className="content-grid content-grid--three">
           {conveniosInternacionais.map((convenio) => (
-            <Card
+            <article
               key={convenio.instituicao}
-              title={convenio.instituicao}
-              subtitle={convenio.local}
-              variant="accent"
-              className="h-full"
-              contentClassName="space-y-3 text-sm"
+              className="h-full space-y-3 text-sm"
             >
+              <div>
+                <h3 className="text-base font-semibold text-[#003366]">{convenio.instituicao}</h3>
+                <p className="text-sm text-gray-500">{convenio.local}</p>
+              </div>
               <div><p className="info-label">Programa</p><p className="info-value">{convenio.programa}</p></div>
               {convenio.dirigente !== "-" && (
                 <div><p className="info-label">Dirigente</p><p className="info-value">{convenio.dirigente}</p></div>
               )}
               <div><p className="info-label">Coordenador</p><p className="info-value">{convenio.coordenador}</p></div>
               <div><p className="info-label">Representante</p><p className="info-value text-primary">{convenio.representante}</p></div>
-            </Card>
+            </article>
           ))}
         </div>
       </ContentSection>
-
-        {/* Navegação */}
-        <div className="mt-12 pt-8 border-t border-gray-200">
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link
-              href="/organizacao"
-              className="text-primary hover:text-accent font-semibold inline-flex items-center gap-2 transition"
-            >
-              ← Gestão e Organização
-            </Link>
-            <Link
-              href="/"
-              className="text-primary hover:text-accent font-semibold inline-flex items-center gap-2 transition"
-            >
-              ← Voltar ao Início
-            </Link>
-            <Link
-              href="/pesquisadores"
-              className="text-primary hover:text-accent font-semibold inline-flex items-center gap-2 transition"
-            >
-              Equipe e Colaborações →
-            </Link>
-          </div>
-        </div>
     </PageContainer>
   );
 }

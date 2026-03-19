@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import Card from "@/components/Card";
 import ContentSection from "@/components/ContentSection";
 import PageContainer from "@/components/PageContainer";
 
@@ -87,19 +85,18 @@ export default function Pesquisadores() {
       <ContentSection title="Integrantes da rede">
         <div className="content-grid content-grid--three">
             {pesquisadoresFiltrados.map((pesquisador) => (
-              <Card
+              <article
                 key={`${pesquisador.nome}-${pesquisador.instituicao}`}
-                title={pesquisador.nome}
-                subtitle={pesquisador.instituicao}
-                variant="soft"
-                className="h-full"
+                className="h-full space-y-2"
               >
+                <h3 className="text-base font-semibold text-[#003366]">{pesquisador.nome}</h3>
+                <p className="text-sm text-gray-500">{pesquisador.instituicao}</p>
                 <div>
                   <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
                     {pesquisador.pais}
                   </span>
                 </div>
-              </Card>
+              </article>
             ))}
           </div>
 
@@ -111,30 +108,6 @@ export default function Pesquisadores() {
             </div>
           )}
       </ContentSection>
-
-        {/* Navegação */}
-        <div className="mt-12 pt-8 border-t border-gray-200">
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link
-              href="/convenios"
-              className="text-primary hover:text-accent font-semibold inline-flex items-center gap-2 transition"
-            >
-              ← Instituições Parceiras
-            </Link>
-            <Link
-              href="/"
-              className="text-primary hover:text-accent font-semibold inline-flex items-center gap-2 transition"
-            >
-              ← Voltar ao Início
-            </Link>
-            <Link
-              href="/contato"
-              className="text-primary hover:text-accent font-semibold inline-flex items-center gap-2 transition"
-            >
-              Contato →
-            </Link>
-          </div>
-        </div>
     </PageContainer>
   );
 }

@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Card from "@/components/Card";
 import ContentSection from "@/components/ContentSection";
 import PageContainer from "@/components/PageContainer";
 
@@ -18,68 +16,47 @@ export default function Contato() {
     >
       <ContentSection title="Informações de contato" className="max-w-4xl">
           <div className="space-y-6">
-            <Card title="RIDEP" variant="accent" className="border-l-4 border-l-[#003366]">
-              <div className="space-y-4 text-gray-600">
-                <p>
-                  <strong>Rede Internacional de Pesquisas sobre o Desenvolvimento Profissional de Professores</strong>
-                </p>
-                <p>
-                  <strong>E-mail:</strong>{" "}
-                  <a href="mailto:contato@ridep.org" className="text-primary hover:underline">
-                    contato@ridep.org
-                  </a>
-                </p>
-              </div>
-            </Card>
+            <section className="space-y-4 text-gray-600">
+              <h3 className="text-lg font-semibold text-[#003366]">RIDEP</h3>
+              <p>
+                <strong>Rede Internacional de Pesquisas sobre o Desenvolvimento Profissional de Professores</strong>
+              </p>
+              <p>
+                <strong>E-mail:</strong>{" "}
+                <a href="mailto:contato@ridep.org" className="text-primary hover:underline">
+                  contato@ridep.org
+                </a>
+              </p>
+            </section>
 
-            <Card title="Instituição Gestora" variant="accent">
-              <div className="space-y-4 text-gray-600">
-                <p>
-                  <strong>UNIUBE - Universidade de Uberaba</strong>
-                </p>
-                <p>
-                  A coordenação geral da RIDEP é realizada pela Universidade de Uberaba,
-                  que fornece o suporte necessário para o desenvolvimento das atividades da rede.
-                </p>
-                <p>
-                  <strong>Endereço:</strong> Av. Nenê Sabino nº 1801. Bairro Universitário. Uberaba/MG. CEP: 38055-500
-                </p>
-                <p>
-                  <strong>Telefone:</strong> (34) 3319-8831
-                </p>
-                <p>
-                  <strong>E-mail:</strong> ppg.educ@uniube.br
-                </p>
-              </div>
-            </Card>
+            <section className="space-y-4 text-gray-600">
+              <h3 className="text-lg font-semibold text-[#003366]">Instituição Gestora</h3>
+              <p>
+                <strong>UNIUBE - Universidade de Uberaba</strong>
+              </p>
+              <p>
+                A coordenação geral da RIDEP é realizada pela Universidade de Uberaba,
+                que fornece o suporte necessário para o desenvolvimento das atividades da rede.
+              </p>
+              <p>
+                <strong>Endereço:</strong> Av. Nenê Sabino nº 1801. Bairro Universitário. Uberaba/MG. CEP: 38055-500
+              </p>
+              <p>
+                <strong>Telefone:</strong> (34) 3319-8831
+              </p>
+              <p>
+                <strong>E-mail:</strong> ppg.educ@uniube.br
+              </p>
+            </section>
 
-            <Card title="Horário de Atendimento" variant="soft">
-              <div className="space-y-2 text-gray-600">
-                <p>Segunda a Sexta: 8h às 18h</p>
-                <p>Sábado: 8h às 12h</p>
-                <p>Domingo: Fechado</p>
-              </div>
-            </Card>
+            <section className="space-y-2 text-gray-600">
+              <h3 className="text-lg font-semibold text-[#003366]">Horário de Atendimento</h3>
+              <p>Segunda a Sexta: 8h às 18h</p>
+              <p>Sábado: 8h às 12h</p>
+              <p>Domingo: Fechado</p>
+            </section>
           </div>
       </ContentSection>
-
-        {/* Navegação */}
-        <div className="mt-12 pt-8 border-t border-gray-200">
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link
-              href="/pesquisadores"
-              className="text-primary hover:text-accent font-semibold inline-flex items-center gap-2 transition"
-            >
-              ← Equipe e Colaborações
-            </Link>
-            <Link
-              href="/"
-              className="text-primary hover:text-accent font-semibold inline-flex items-center gap-2 transition"
-            >
-              ← Voltar ao Início
-            </Link>
-          </div>
-        </div>
     </PageContainer>
   );
 }

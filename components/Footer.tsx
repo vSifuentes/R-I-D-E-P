@@ -23,8 +23,8 @@ export default function Footer() {
             <div className="text-xs md:text-sm text-white/90 leading-snug md:leading-normal">
               <p>
                 <strong>E-mail:</strong>{" "}
-                <a href="mailto:contato@ridep.org" className="hover:text-white transition-colors">
-                  contato@ridep.org
+                <a href="mailto:vania.vieira@uniube.br" className="hover:text-white transition-colors">
+                  vania.vieira@uniube.br
                 </a>
               </p>
               <p>
