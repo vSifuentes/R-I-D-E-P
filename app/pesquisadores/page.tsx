@@ -9,21 +9,31 @@ import PageContainer from "@/components/PageContainer";
 export default function Pesquisadores() {
   // Dados do JSON: formato "Nome (Instituição)" ou "Nome (Instituição – País)"
   const pesquisadoresRaw = [
-    "Vania Maria de Oliveira Vieira (UNIUBE)",
-    "Marilene Ribeiro Resende (UNIUBE)",
-    "Valeska Guimarães Rezende da Cunha (UNIUBE)",
-    "Orlando Fernández Aquino (UNIUBE)",
-    "Camilla de Oliveira Vieira (UNIUBE)",
-    "José Humberto Rodrigues dos Anjos (UNIFIMES)",
-    "Monaliza Angélica Santana (UNIPAM)",
-    "Geovana Ferreira Melo Teixeira (UFU)",
-    "Martha Maria Prata Linhares (UFTM)",
     "Adelina de Oliveira Novaes (UNICID)",
-    "Maria Alzira de Almeida Pimenta (UNISO)",
+    "Adriana Giarola Vilamaior (IFMG)",
     "Alberto Matias Gonzales (UNISS – Cuba)",
+    "Ana Carolina Vieira Oliveira (UNIUBE)",
+    "Camilla de Oliveira Vieira (UNIUBE)",
+    "Edson Rodrigo de Almeida (UFV)",
+    "Geovana Ferreira Melo Teixeira (UFU)",
+    "Gerusa Dumont de Rezende (UNIUBE)",
+    "José Humberto Rodrigues dos Anjos (UNIFIMES)",
     "Juan José Mena (Universidade de Salamanca – Espanha)",
+    "Lais Moraes de Oliveira Porfírio (UEG)",
+    "Leonice Vieira de Jesus Paixão (UNIMONTES)",
+    "Marcelle Zanquêta de Souza (UNIUBE)",
+    "Maria Alzira de Almeida Pimenta (UNISO)",
+    "Marianna Centeno M. de Gouvea (UNIUBE)",
+    "Marilene Ribeiro Resende (UNIUBE)",
+    "Martha Maria Prata Linhares (UFTM)",
+    "Monaliza Angélica Santana (UNIPAM)",
+    "Orlando Fernández Aquino (UNIUBE)",
+    "Pablo Calegário (UNIUBE)",
     "Patrícia Medina Zuta (UARM – Peru)",
-    "Rejane Dias da Silva (UFPE)"
+    "Rejane Dias da Silva (UFPE)",
+    "Rosimeire Ferreira Diniz (UEMG)",
+    "Valeska Guimarães Rezende da Cunha (UNIUBE)",
+    "Vania Maria de Oliveira Vieira (UNIUBE)"
   ];
 
   // Processar os dados para extrair nome, instituição e país
